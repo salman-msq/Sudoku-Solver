@@ -62,15 +62,15 @@ body{
   
   @media screen and (max-width: 460px) {
     .prog-name {
-          font-size: 20px;
+          font-size: 25px;
       }
   
       table {
-        font-size: 1em;
+        font-size: 1.2em;
       }
   
       button{
-          font-size: 0.8rem;
+          font-size: 0.9rem;
       }
   }
   
