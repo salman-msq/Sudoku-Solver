@@ -1,0 +1,76 @@
+body{
+    background-color: aliceblue;
+    font-family: sans-serif;
+}
+
+#box {
+    text-align: center;
+  }
+  
+  .prog-name {
+      font-size: 40px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    font-size: 2em;
+    margin: 0 auto;
+  }
+  
+  colgroup,
+  tbody {
+    border: solid medium;
+  }
+  
+  td {
+    border: solid thin;
+    height: 1.4em;
+    width: 1.4em;
+    text-align: center;
+    padding: 0;
+    background-color: white;
+  }
+  
+  .btns{
+      display: flex;
+      text-align: center;
+      justify-content: center;
+  }
+  
+  button {
+    margin-top: 15px;
+    font-size: 1.5em;
+    background-color: #A288E3;
+    color: white;
+    margin-left: 5px;
+    border: #A288E3;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+  
+  button:hover{
+      color: #A288E3;
+      background-color: white;
+      outline: #A288E3;
+      transition: all 1s ease;
+      cursor: pointer;
+  }
+
+  #invalid-sudoku{
+    color: red;
+  }
+  
+  @media screen and (max-width: 460px) {
+    .prog-name {
+          font-size: 20px;
+      }
+  
+      table {
+        font-size: 1em;
+      }
+  
+      button{
+          font-size: 0.8rem;
+      }
+  }
+  
