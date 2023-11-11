@@ -40,7 +40,7 @@ document.querySelector('#solve-button').addEventListener('click', () => {
     ];
 
     let tdArr = document.getElementsByTagName('td');
-    let row = -1, col = 0;
+    let row = -1, col = 0, count = 0;
     for (let i = 0; i < tdArr.length; i++){
         if (i % 9 === 0){
             row++;
@@ -49,9 +49,15 @@ document.querySelector('#solve-button').addEventListener('click', () => {
 
         if (tdArr[i].innerText.length != 0){
             board[row][col] = Number(tdArr[i].innerText);
+            count++;
         }
 
         col++;
+    }
+
+    if (count === 0){
+        document.getElementById('invalid-sudoku').innerText = 'Sudoku is Empty!!';
+        return;
     }
 
     if (isValidSudoku(board)){
